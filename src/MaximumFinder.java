@@ -1,23 +1,23 @@
-public class MaximumFinder {
-    public static Integer findMaximum(Integer a, Integer b, Integer c) {
-        Integer max = a;
-        if (b.compareTo(max) > 0) {
-            max = b;
-        }
-        if (c.compareTo(max) > 0) {
-            max = c;
-        }
-        return max;
+class MaximumFinder<T extends Comparable<T>> {
+
+    private T a;
+    private T b;
+    private T c;
+
+    public MaximumFinder(T a, T b, T c) {
+        this.a = a;
+        this.b = b;
+        this.c = c;
     }
 
-    public static Float findMaximum(Float a, Float b, Float c) {
-        Float max = a;
-        if (b.compareTo(max) > 0) {
-            max = b;
-        }
-        if (c.compareTo(max) > 0) {
-            max = c;
-        }
+    public T testMaximum() {
+        return findMaximum(a, b, c);
+    }
+
+    public static <T extends Comparable<T>> T findMaximum(T a, T b, T c) {
+        T max = a;
+        if (b.compareTo(max) > 0) max = b;
+        if (c.compareTo(max) > 0) max = c;
         return max;
     }
 }
