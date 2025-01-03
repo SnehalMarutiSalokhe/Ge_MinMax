@@ -20,6 +20,7 @@ public class Main {
         System.out.println("UC4 - Test Case 4.2 (Max from multiple floats): " + new MaximumFinder<>(30.5f, 20.2f, 10.1f, 35.0f).testMaximum());
         System.out.println("UC4 - Test Case 4.3 (Max from multiple strings): " + new MaximumFinder<>("Peach", "Apple", "Banana", "Mango").testMaximum());
 
+        new MaximumFinder<>(30, 20, 10).testMaximum();
     }
 
 }
