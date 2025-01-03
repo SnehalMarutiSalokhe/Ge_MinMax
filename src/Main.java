@@ -12,5 +12,8 @@ public class Main {
         System.out.println("UC2 - Test Case 2.2 (Max at 2nd position): " + MaximumFinder.findMaximum(20.2f, 30.5f, 10.1f));
         System.out.println("UC2 - Test Case 2.3 (Max at 3rd position): " + MaximumFinder.findMaximum(10.1f, 20.2f, 30.5f));
 
+        System.out.println("UC3 - Test Case 3.1 (Max at 1st position): " + MaximumFinder.findMaximum("Peach", "Apple", "Banana"));
+        System.out.println("UC3 - Test Case 3.2 (Max at 2nd position): " + MaximumFinder.findMaximum("Apple", "Peach", "Banana"));
+        System.out.println("UC3 - Test Case 3.3 (Max at 3rd position): " + MaximumFinder.findMaximum("Apple", "Banana", "Peach"));
     }
 }
